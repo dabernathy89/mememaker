@@ -1,4 +1,15 @@
 <!doctype html>
+<?php
+  include 'class-meme.php';
+
+  $form_data = $_POST;
+
+  if (array_key_exists('meme', $form_data)) {
+    $meme = new Meme($form_data['meme'], $form_data['meme-top-text'], $form_data['meme-bottom-text']);
+    $meme->generate();
+  }
+?>
+
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
@@ -42,7 +53,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <form method="post" action="submit.php">
+            <form method="post" action="">
 
               <div class="form-group">
                 <label for="meme-top-text">Top Text</label>
