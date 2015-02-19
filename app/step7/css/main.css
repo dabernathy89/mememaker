@@ -1,0 +1,35 @@
+.form-group.memes img {
+    width: 100px;
+    height: auto;
+}
+
+.form-group.memes input {
+    clear: left;
+}
+
+.meme {
+    position: relative;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.meme img {
+    width: 100%;
+}
+
+.meme span.top, .meme span.bottom {
+    position: absolute;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.meme span.bottom {
+    top: auto;
+    bottom: 0;
+}
