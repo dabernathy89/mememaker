@@ -1,0 +1,8 @@
+.form-group.memes img {
+    width: 100px;
+    height: auto;
+}
+
+.form-group.memes input {
+    clear: left;
+}
